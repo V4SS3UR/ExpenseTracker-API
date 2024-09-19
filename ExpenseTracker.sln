@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{ABB2EC94-E92A-479A-88C4-77AF278D9A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTrackerTests", "ExpenseTrackerTests\ExpenseTrackerTests.csproj", "{EACB8568-3B35-4A4A-A82B-D05711C42BD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB2EC94-E92A-479A-88C4-77AF278D9A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB2EC94-E92A-479A-88C4-77AF278D9A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB2EC94-E92A-479A-88C4-77AF278D9A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB2EC94-E92A-479A-88C4-77AF278D9A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACB8568-3B35-4A4A-A82B-D05711C42BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACB8568-3B35-4A4A-A82B-D05711C42BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACB8568-3B35-4A4A-A82B-D05711C42BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACB8568-3B35-4A4A-A82B-D05711C42BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC46A497-D89F-413A-9660-0E388B27E1A3}
+	EndGlobalSection
+EndGlobal
