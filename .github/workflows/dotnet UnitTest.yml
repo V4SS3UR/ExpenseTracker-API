@@ -1,0 +1,44 @@
+# This workflow will build and test a .NET project using MSTest
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository code
+    - uses: actions/checkout@v4
+
+    # Step 2: Setup .NET SDK version 8.0.x
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    # Step 3: Restore project dependencies
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Step 4: Build the project
+    - name: Build
+      run: dotnet build --no-restore
+
+    # Step 5: Run tests with MSTest
+    - name: Run tests
+      run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test_results.trx"
+
+    # Step 6: Upload test results as an artifact (optional, to store test results)
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: TestResults
+        path: "**/TestResults/*.trx"
